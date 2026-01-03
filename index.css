@@ -1,16 +1,21 @@
-body { 
-  background-color: red; 
-}
-
-h1 {
-  color: white;
- 
-}
-
-p {
-  color: red; 
+body {
+  background: linear-gradient(#016764, #005958, #014848, #00312F, #001E1E);
+  min-height: 100vh;
+  margin: 20;
+  background-repeat: no-repeat;
 }
 
 .headerText {
-  font-family: Garamond, Arial;
+  color: #b8edff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Motiva Sans", Sans-serif;
+  margin: 2px;
+}
+
+#headerSubtext {
+  font-size: 20px;
 }
