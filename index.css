@@ -1,0 +1,16 @@
+body { 
+  background-color: red; 
+}
+
+h1 {
+  color: white;
+ 
+}
+
+p {
+  color: red; 
+}
+
+.headerText {
+  font-family: Garamond, Arial;
+}
