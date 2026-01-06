@@ -1,0 +1,135 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#016764, #005958, #014848, #00312F, #001E1E);
+  min-height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  line-height: 1.4;
+  color: #2eeaff;
+}
+
+/* ===== Top Row (Images Only) ===== */
+.top-row {
+  position: relative;
+  height: 120px;
+  margin-bottom: 3rem;
+}
+
+.penguin {
+  position: absolute;
+  right: 75%;
+  top: 20px;
+  width: 140px;
+}
+
+.matrix {
+  position: absolute;
+  right: 15%;
+  top: 20px;
+  width: 160px;
+}
+
+/* ===== Header (Text Only) ===== */
+.page-header {
+  text-align: center;
+  padding: 1rem;
+  background: #154a46;
+  color: white;
+}
+
+.main-heading {
+  font-family: Merriweather, serif;
+  font-size: 2.75rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subheading {
+  font-family: Merriweather, serif;
+  font-size: 1.25rem;
+  margin-top: -3px;
+}
+
+/* ===== Main Layout ===== */
+.content {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ===== Solver Section ===== */
+.solver {
+  margin-top: 2rem;
+  margin-left: -10rem;
+}
+
+.solver-title {
+  font-family: Merriweather, serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.solver-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.solver-form label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.solver-form input {
+  width: 120px;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.solver-form button {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ===== Form Messages ===== */
+.form-success {
+  color: green;
+  margin-top: 1rem;
+}
+
+.form-error {
+  color: red;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .content {
+    max-width: 728px;
+  }
+}
+
+@media (max-width: 767px) {
+  .solver-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 479px) {
+  .content {
+    max-width: none;
+  }
+
+  .top-row {
+    display: none;
+  }
+}
