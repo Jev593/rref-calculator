@@ -2,15 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Jevens">
   <meta name="google-site-verification" content="8S98l5Ha2yMpUDLNNGaU5T8Y5O3pZBwyN-4nKmfZ1dc" />
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="/images/penguin_icon_32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/penguin_icon_16x16.png" sizes="16x16">
   <title>RREF Calculator - Home</title>
 </head>
 <body>
-  <h1 class="headerText">Matrix Row Reducer</h1>
-  <p class="headerText" id="headerSubtext">Calculates the reduced row echelon form of a matrix.</p>
-  <img src="/images/penguin-clipart.png" alt="Happy penguin" id="penguinClipart">
+
+  <!-- Top Visual Row (Images Only) -->
+  <div class="top-row">
+    <img src="images/penguin.png" alt="Penguin graphic" class="penguin">
+    <img src="images/matrix.png" alt="Matrix graphic" class="matrix">
+  </div>
+
+  <!-- Header (Text Only) -->
+  <header class="page-header">
+    <h1 class="main-heading">Matrix Row Reducer</h1>
+    <p class="subheading">Compute row-echelon (REF) and reduced row-echelon forms (RREF) of a matrix!</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Solver Section -->
+    <section class="solver">
+      <h2 class="solver-title">Step 1: Define Matrix Bounds</h2>
+
+      <form class="solver-form">
+        <label>
+          <span>Rows:</span>
+          <input type="text" name="a">
+        </label>
+	<p>X    </p>
+        <label>
+          <span>Columns:</span>
+          <input type="text" name="b">
+        </label>
+
+        <button type="submit">Resize</button>
+      </form>
+
+      <p class="form-success" hidden>Success!</p>
+      <p class="form-error" hidden>Error occurred.</p>
+    </section>
+
+  </main>
+
 </body>
 </html>
