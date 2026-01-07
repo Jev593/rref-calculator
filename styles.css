@@ -64,7 +64,7 @@ body {
 /* ===== Solver Section ===== */
 .solver {
   margin-top: 2rem;
-  margin-left: -10rem;
+  margin-left: 0;
 }
 
 .solver-title {
@@ -90,6 +90,7 @@ body {
   width: 120px;
   font-size: 1rem;
   padding: 0.25rem;
+  border-radius: 6px;
 }
 
 .solver-form button {
@@ -99,15 +100,26 @@ body {
   cursor: pointer;
 }
 
-/* ===== Form Messages ===== */
-.form-success {
-  color: green;
-  margin-top: 1rem;
+.matrix-cell {
+  .width: 120px;
+  font-size: 1rem;
+  padding: .25rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 6px;
 }
 
-.form-error {
-  color: red;
-  margin-top: 1rem;
+#input-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.buttons {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 /* ===== Responsive ===== */

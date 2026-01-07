@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="/images/penguin_icon_32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/penguin_icon_16x16.png" sizes="16x16">
-  <title>RREF Calculator - Home</title>
+  <title>RREF Calculator</title>
 </head>
 <body>
-
   <!-- Top Visual Row (Images Only) -->
   <div class="top-row">
     <img src="images/penguin.png" alt="Penguin graphic" class="penguin">
@@ -34,22 +33,28 @@
       <form class="solver-form">
         <label>
           <span>Rows:</span>
-          <input type="number" id="rowInput" name="rows" value="2" min="1" max="5">
+          <input type="number" id="rowInput" name="rows" value="3" min="1" max="5">
         </label>
-	<p>X    </p>
+	<p style="font-size: 25px;">×    </p>
         <label>
           <span>Columns:</span>
-          <input type="number" id="columnInput" name="columns" value="2" min="1" max="5">
+          <input type="number" id="columnInput" name="columns" value="3" min="1" max="5">
         </label>
 
-        <button type="submit">Resize</button>
+        <button type="button" onclick="resizeMatrix()">Generate</button>
       </form>
-
-      <p class="form-success" hidden>Success!</p>
-      <p class="form-error" hidden>Error occurred.</p>
+      <div id="input-grid">
+      </div>
+      <span id="button-span">
+        <h3 class="solver-title">Step 2: Apply Gaussian Elimination</h2>
+        <button type="button" class="buttons" onclick="compute()">Compute</button>
+        <button type="button" class="buttons" onclick="clear()">Clear All</button>
+      </span>
     </section>
 
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
