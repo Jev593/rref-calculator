@@ -48,8 +48,26 @@
       <span id="button-span">
         <h3 class="solver-title">Step 2: Apply Gaussian Elimination</h2>
         <button type="button" class="buttons" onclick="compute()">Compute</button>
-        <button type="button" class="buttons" onclick="clear()">Clear All</button>
+        <button type="button" class="buttons" onclick="clearAll()">Clear All</button>
       </span>
+    </section>
+    <!-- Computation -->
+    <section id="computation" class="is-hidden">
+      <div class="hbox-container">
+        <p style="font-size: 24px;">Row-Echelon Form: </p>
+        <p id="ref-matrix">
+	  [0 0 0]<br>
+	  [0 0 0]<br>
+	  [0 0 0]	  
+        </p>
+
+        <p style="font-size: 24px;">Reduced Row-Echelon Form: </p>
+        <p id="rref-matrix">
+	  [1 0 0]<br>
+	  [0 1 0]<br>
+	  [0 0 1]
+	</p>
+      </div>
     </section>
 
   </main>

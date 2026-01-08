@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   line-height: 1.4;
-  color: #2eeaff;
+  color: #abeeff;
 }
 
 /* ===== Top Row (Images Only) ===== */
@@ -21,14 +21,14 @@ body {
 
 .penguin {
   position: absolute;
-  right: 75%;
+  right: 70%;
   top: 20px;
   width: 140px;
 }
 
 .matrix {
   position: absolute;
-  right: 15%;
+  right: 30%;
   top: 20px;
   width: 160px;
 }
@@ -38,7 +38,7 @@ body {
   text-align: center;
   padding: 1rem;
   background: #154a46;
-  color: white;
+  color: white
 }
 
 .main-heading {
@@ -120,6 +120,36 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+}
+
+/* ==== Computation ==== */
+.computation {
+  margin-top: 40px;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.hbox-container {
+  display: flex; 
+  gap: 10px;    
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     
+  height: 200px;           /* Example height for visibility */
+  padding: 10px;  
+}
+
+#ref-matrix {
+  font-size: 32px;
+  color: white;
+  margin: 20px;  
+}
+
+#rref-matrix {
+  font-size: 32px;
+  color: white;
+  margin: 20px;
 }
 
 /* ===== Responsive ===== */
