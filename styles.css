@@ -123,8 +123,8 @@ body {
 }
 
 /* ==== Computation ==== */
-.computation {
-  margin-top: 40px;
+#computation {
+  margin-top: 50px;
 }
 
 .is-hidden {
@@ -141,13 +141,13 @@ body {
 }
 
 #ref-matrix {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
   margin: 20px;  
 }
 
 #rref-matrix {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
   margin: 20px;
 }
